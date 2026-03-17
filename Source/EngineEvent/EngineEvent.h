@@ -77,7 +77,7 @@ template <typename... Args>
 class EngineEvent final
 {
 private:
-	vector<Delegate<Args...>> delegates = vector<Delegate<Args...>>();
+	vector<Delegate<Args...>> delegates;
 
 public:
 	EngineEvent() = default;

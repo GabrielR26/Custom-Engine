@@ -16,7 +16,7 @@ class Scene : public Base
 private:
 	string name = "Scene";
 	bool isLoaded = true;
-	vector<Object*> listSceneObject = vector<Object*>();
+	vector<Object*> listSceneObject;
 
 public:
 	inline const string& GetName() const { return name; }

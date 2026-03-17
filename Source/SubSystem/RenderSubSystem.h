@@ -11,7 +11,7 @@
 class RenderSubSystem final : public SubSystem, public Singleton<RenderSubSystem>
 {
 	RenderWindow* mainWindow = nullptr;
-	vector<RenderObject*> listRenderObject = vector<RenderObject*>();
+	vector<RenderObject*> listRenderObject;
 
 public:
 	RenderSubSystem() = default;

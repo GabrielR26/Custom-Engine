@@ -20,8 +20,8 @@ struct Timer
 /// </summary>
 class GameSubSystem final : public SubSystem, public Singleton<GameSubSystem>
 {
-	vector<Object*> listObject = vector<Object*>();
-	vector<Timer> listTimer = vector<Timer>();
+	vector<Object*> listObject;
+	vector<Timer> listTimer;
 
 public:
 	GameSubSystem() = default;

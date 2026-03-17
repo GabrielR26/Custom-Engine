@@ -1,0 +1,5 @@
+Sortir events (windows + input) de sfml
+
+Eviter multi-heritage
+
+Gerer add/delete : manager ou list

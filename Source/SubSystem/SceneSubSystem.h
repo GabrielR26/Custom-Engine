@@ -9,7 +9,7 @@
 class SceneSubSystem final : public SubSystem, public Singleton<SceneSubSystem>
 {
 protected:
-	vector<Scene*> listScene = vector<Scene*>();
+	vector<Scene*> listScene;
 	Scene* currentScene = nullptr;
 
 public:

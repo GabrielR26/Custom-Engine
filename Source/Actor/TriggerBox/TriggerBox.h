@@ -26,7 +26,7 @@ private:
 
 	bool isTrigger = true;
 	FloatRect* triggerZone = nullptr;
-	vector<ActorToTriggerData*> listActorToTrigger = vector<ActorToTriggerData*>();
+	vector<ActorToTriggerData*> listActorToTrigger;
 
 public:
 	inline EEonTriggerEnter OnTriggerEnter() { return onTriggerEnter; }

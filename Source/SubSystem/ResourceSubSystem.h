@@ -12,10 +12,10 @@
 /// </summary>
 class ResourceSubSystem final : public SubSystem, public Singleton<ResourceSubSystem>
 {
-	vector<Font*> listFont = vector<Font*>();
-	vector<Texture*> listTexture = vector<Texture*>();
-	vector<SoundBuffer*> listSound = vector<SoundBuffer*>();
-	vector<Music*> listMusic = vector<Music*>();
+	vector<Font*> listFont;
+	vector<Texture*> listTexture;
+	vector<SoundBuffer*> listSound;
+	vector<Music*> listMusic;
 	Font* basicFont = nullptr;
 
 public:

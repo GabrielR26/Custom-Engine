@@ -61,6 +61,8 @@ void EventSubSystem::HandleEvents()
 		// Key pressed/released
 		if (const Event::KeyPressed* _sfEventKeyPressed = _sfEvent->getIf<Event::KeyPressed>())
 		{
+			if (_sfEventKeyPressed->scancode == Keyboard::Scancode::Escape)
+				Engine::Closing();
 			keyPressedEvent->Invoke(_sfEventKeyPressed);
 		}
 		else if (const Event::KeyReleased* _sfEventKeyReleased = _sfEvent->getIf<Event::KeyReleased>())
